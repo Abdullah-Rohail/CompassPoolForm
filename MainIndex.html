@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<!-- meta viewport -->
+	<title>Compass Order Form</title>
+	
+	<link rel="stylesheet" href="MainStyle.css" media="all">
+	<!-- <link rel="stylesheet" href="PrintStyle.css" media="print"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css">
+	<link rel="shortcut icon" href="resources/header.png" />
+	<script src="resources/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="mainContainer">
+		
+		<form action="">
+			
+			<header>
+				<img src="resources/logo2.jpg" alt="Company Logo">
+				<h1>Compass Coping Order Form</h1>
+			</header>
+			
+			<section id="personalDetails_Section">
+				
+				<hr id="brL">
+					<h3 style="display: inline;">&emsp;Ordering Details&emsp;</h3>
+				<hr id="brR">
+				<!-- <div class="personal">
+					<label for="dealerName">Dealer Order</label>
+						<input type="text" id="dealerName">
+					<label style="margin-left: 5%;" for="contactName">Contact Name</label>
+						<input type="text" id="contactName">
+					<label for="phoneNumber">Phone Number</label>
+						<input style="width: 100%" type="tel" id="phoneNumber" placeholder="+421 2 45648254"><br>
+					<label for="email">Email Address</label>
+						<input type="email" id="email"><br>
+					<label for="poolModel">Pool Model</label>
+						<select name="poolModel" id="poolModel" required="required">
+							<optgroup value="Small" label="Small">	
+									<option selected="selected" value="aqua">Aqua</option>
+									<option value="aquaNova53">Aqua Nova 53</option>				
+									<option value="babyPool">Baby Pool</option>
+									<option value="Briliant66">Briliant 66</option>
+									<option value="x-trainer58">X-Trainer 58</option>
+									<option value="x-trainer72">X-Trainer 72</option>
+								</optgroup>
+								<optgroup value="Medium" label="Medium">
+									<option value="x-trainer58">Aqua Nova 77</option>
+									<option value="x-trainer58">Briliant 74</option>
+									<option value="x-trainer58">Briliant 88</option>
+									<option value="fun74">Fun 74</option>
+									<option value="fun80">Fun 80</option>
+									<option value="fun83">Fun 83</option>
+									<option value="x-trainer82">X-Trainer 82</option>
+								</optgroup>
+								<optgroup value="Large" label="Large">
+									<option value="fun100">Fun 100</option>
+									<option value="xl-luonger95">XL Luonger 95</option>
+									<option value="xl-trainer110">XL Trainer 110</option>
+									<option value="xl-trainer110FB">XL Trainer 110 FB</option>
+									<option value="fastLane">Fast Lane</option>
+								</optgroup>
+								<optgroup value="Java" label="Java">
+									<option value="java101">Java 101</option>
+									<option value="java114">Java 114</option>	
+								</optgroup>
+								<optgroup value="XXL" label="XXL">
+									<option value="xl-trainer133">XL Trainer 133</option>
+								</optgroup>
+							</select>
+				</div> -->
+				
+<form id="myform">				<table id="table_one">
+					<tr>
+						<td><label class="dn" for="dealerName">Dealer Order</label></td>
+						<td><input style="width: 80%;" type="text" id="dealerName" required="required"></td>
+						
+						<td><label class="cn" for="contactName">Contact Name</label></td>
+						<td><input type="text" id="contactName" required="required"></td>
+					</tr>
+					<tr>
+						<td><label class="pn" for="phoneNumber">Phone Number</label></td>
+						<td><input type="tel" id="phoneNumber" ></td>
+						<td><label class="en"  for="email">Email Address</label></td>
+						<td><input type="email" id="email" required="required"></td>
+					</tr>
+					<tr>
+					<td>
+						<label class="ppmm" for="poolModel">Pool Model</label>
+					</td>
+						<td>
+							<select name="poolModel" id="poolModel" required="required">
+								<option value="Choose Pool">Choose Pool</option>
+								<optgroup value="Small" label="Small">	
+									<option value="classic">Classic</option>
+									<option value="aquaNova53">Aqua Nova 53</option>				
+									<option value="babyPool">Baby Pool</option>
+									<option value="Briliant66">Briliant 66</option>
+									<option value="x-trainer58">X-Trainer 58</option>
+									<option value="x-trainer72">X-Trainer 72</option>
+								</optgroup>
+								<optgroup value="Medium" label="Medium">
+									<option value="x-trainer58">Aqua Nova 77</option>
+									<option value="x-trainer58">Briliant 74</option>
+									<option value="x-trainer58">Briliant 88</option>
+									<option value="fun74">Fun 74</option>
+									<option value="fun80">Fun 80</option>
+									<option value="fun83">Fun 83</option>
+									<option value="x-trainer82">X-Trainer 82</option>
+								</optgroup>
+								<optgroup value="Large" label="Large">
+									<option value="fun100">Fun 100</option>
+									<option value="xl-luonger95">XL Luonger 95</option>
+									<option value="xl-trainer110">XL Trainer 110</option>
+									<option value="xl-trainer110FB">XL Trainer 110 FB</option>
+									<option value="fastLane">Fast Lane</option>
+								</optgroup>
+								<optgroup value="Java" label="Java">
+									<option value="java101">Java 101</option>
+									<option value="java114">Java 114</option>	
+								</optgroup>
+								<optgroup value="XXL" label="XXL">
+									<option value="xl-trainer133">XL Trainer 133</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+					
+				</table>
+				
+				
+				<div class="personal2">
+				<h3>Shipping Address</h3>
+							<label class="streetAdd" for="Street_Address">Street</label>
+								<input style="width: 88%;margin-bottom: 2%;" type="text" id="Street_Address"  required="required"><br>
+							<label class="cityAdd" for="City_Address">City</label>
+								<input type="text" id="City_Address"  required="required">	
+							<label class="stateAdd" for="State_Address">State</label>
+								<input type="text" id="State_Address"  required="required">
+							<label class="zipAdd" for="Zip_Address">Zip</label>
+								<input type="text" id="Zip_Address"  required="required">
+				</div>
+				<style>
+					#error{
+						color: red;
+					}
+				</style>
+				<div class="error-messages" style="text-align: center;margin-bottom:5%;">
+					<br><span id="errorPool"></span>
+					<br><span id="errorDealer"></span>
+					<br><span id="errorContact"></span>
+					<br><span id="errorPhone"></span>
+					<br><span id="errorEmail"></span>
+					
+					<br><span id="errorStreet"></span>
+					<br><span id="errorCity"></span>
+					<br><span id="errorState"></span>
+					<br><span id="errorZip"></span>
+				</div>
+				<!-- <table id="table_one">
+					<tr>
+						<td><label for="dealerName">Dealer Order</label></td>
+						<td><input style="width: 80%;" type="text" id="dealerName"></td>
+						
+						<td><label for="contactName">Contact Name</label></td>
+						<td><input type="text" id="contactName"></td>
+					</tr>
+					<tr>
+						<td><label for="phoneNumber">Phone Number</label></td>
+						<td><input type="tel" id="phoneNumber" placeholder="+421 2 45648254"></td>
+						<td><label for="email">Email Address</label></td>
+						<td><input type="email" id="email"></td>
+					</tr>
+					<tr>
+					<td>
+						<label for="poolModel">Pool Model</label>
+					</td>
+						<td>
+							<select name="poolModel" id="poolModel" required="required">
+								<optgroup value="Small" label="Small">	
+									<option selected="selected" value="aqua">Aqua</option>
+									<option value="aquaNova53">Aqua Nova 53</option>				
+									<option value="babyPool">Baby Pool</option>
+									<option value="Briliant66">Briliant 66</option>
+									<option value="x-trainer58">X-Trainer 58</option>
+									<option value="x-trainer72">X-Trainer 72</option>
+								</optgroup>
+								<optgroup value="Medium" label="Medium">
+									<option value="x-trainer58">Aqua Nova 77</option>
+									<option value="x-trainer58">Briliant 74</option>
+									<option value="x-trainer58">Briliant 88</option>
+									<option value="fun74">Fun 74</option>
+									<option value="fun80">Fun 80</option>
+									<option value="fun83">Fun 83</option>
+									<option value="x-trainer82">X-Trainer 82</option>
+								</optgroup>
+								<optgroup value="Large" label="Large">
+									<option value="fun100">Fun 100</option>
+									<option value="xl-luonger95">XL Luonger 95</option>
+									<option value="xl-trainer110">XL Trainer 110</option>
+									<option value="xl-trainer110FB">XL Trainer 110 FB</option>
+									<option value="fastLane">Fast Lane</option>
+								</optgroup>
+								<optgroup value="Java" label="Java">
+									<option value="java101">Java 101</option>
+									<option value="java114">Java 114</option>	
+								</optgroup>
+								<optgroup value="XXL" label="XXL">
+									<option value="xl-trainer133">XL Trainer 133</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+					
+				</table> -->
+				
+				<!-- <h3 style="margin-left: 10%">Shipping Address</h3>
+				
+				<table id="t">
+					<tr>
+							<td><label for="Sreet Address">Street</label></td>
+							<td><input style="width: 100%;" type="text" id="Shipping Address" placeholder="Compass Europe,e.r.o Polna 4"></td>
+							<td><label for="City Address">City</label></td>
+							<td><input type="text" id="Shipping Address" placeholder="Senec"></td>	
+					</tr>
+					<tr>
+							<td><label for="State Address">State</label></td>
+							<td><input type="text" id="Shipping Address" placeholder="Slovakia"></td>
+							<td><label for="Zip Address">Zip</label></td>
+							<td><input type="text" id="Shipping Address" placeholder="90301"></td>
+					</tr>
+				</table> -->
+
+				<button class="btn" id="btn_sec1">NEXT</button>
+</form>
+			</section>
+			<section id="chooseProfileDetails_Section">
+				<hr id="brL" style="margin-left:13%;"><h3 style="display: inline;">&emsp;Choose Profile&emsp;</h3><hr id="brR">
+					<img class="myImg" src="resources/COPING A0.jpg" alt="A0" id="A0img">
+			
+					<img class="myImg" src="resources/COPING B0.jpg" alt="B0" id="B0img">
+	
+					<img class="myImg" src="resources/COPING B6.jpg" alt="B6" id="B6img">
+		
+					<img class="myImg" src="resources/COPING D0.jpg" alt="D0" id="D0img">
+
+					<img class="myImg" src="resources/COPING E0.jpg" alt="E0" id="E0img">
+					<div class="optionsProfile">
+						<input type="radio" name="coping[]" class="form-radio" value="A0" id="A0" /><label for="A0">A0</label>
+						<input type="radio" name="coping[]" class="form-radio" value="B0" id="B0"/><label for="B0">B0</label>
+						<input type="radio" name="coping[]" class="form-radio" value="B6" id="B6"/><label for="B6">B6</label>
+						<input type="radio" name="coping[]" class="form-radio" value="D0" id="D0"/><label for="D0">D0</label>
+						<input type="radio" name="coping[]" class="form-radio" value="E0" id="E0"/><label for="E0">E0</label>	
+					</div>
+					<button class="btn" id="btn_sec2_back">GO BACK</button>
+					<button class="btn" id="btn_sec2_proc">NEXT</button>		
+			</section>
+			
+			<section id="stonesColor_Section">
+				<hr id="brL" style="margin-left:13%;"><h3 style="display: inline;">&emsp;Stones Color&emsp;</h3><hr id="brR">
+					<img class="myImg"  src="resources/color_California.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to apply once a year sealer to protect to stones 
+					<br><br><label style=' color:orange;'>2</label>.
+						The wet look sealer will make the stones change the color to be more dark beige/ yellow 
+					<br><br><label style=' color:orange;'>3</label>.
+						Clean the grout between the stones as fast as you can the nonslip treatment will absorbed the grout if you don’t and will remained marks.
+
+					<br><br>...<br> 
+					" id="California_Stone">
+			
+					<img class="myImg" src="resources/color_EastGray.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to apply once a year sealer to protect to stones  
+					<br><br><label style=' color:orange;'>2</label>
+						The wet look sealer will make the stones change the color to be more dark black/gray
+					<br><br><label style=' color:orange;'>3</label>.
+						Clean the grout between the stones as fast as you can the nonslip treatment will absorbed the grout if you don’t and will remained marks.
+
+					<br><br>...<br>
+					" id="East-Gray_Stone">
+					
+					<img class="myImg" src="resources/color_GraniteGray.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to apply once a year sealer to protect to stones  
+					<br><br><label style=' color:orange;'>2</label>.
+						The wet look sealer will make the stones change the color to be more gray
+					<br><br><label style=' color:orange;'>3</label>.
+						This stones have “Flamed” treatment as a non-slip treatment.
+
+					<br><br>...<br>
+					" id="Granite-Gray_Stone">
+
+					<img class="myImg" src="resources/color_Kavala.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to apply once a year sealer to protect the stones
+					<br><br><label style=' color:orange;'>2</label>.
+						The wet look sealer will make the stones change the color to be more light gray ,and the vain will be more bold
+					<br><br><label style=' color:orange;'>3</label>.
+						Clean the grout between the stones as fast as you can the nonslip treatment will absorbed the grout if you don’t and will remained marks.
+					<br><br>...<br>
+					" id="Kavala_Stone">    
+
+					<img class="myImg" src="resources/color_Sunny.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We apply not recommend this stones in frizzing area   
+					<br><br><label style=' color:orange;'>2</label>.
+						We recommend to apply once a year sealer to protect to stones 
+					<br><br><label style=' color:orange;'>3</label>.
+						The wet look sealer will make the stones change the color to be more dark beige/yellow  
+					<br><br><label style=' color:orange;'>4</label>.
+						Clean the grout between the stones as fast as you can the nonslip treatment will absorbed the grout if you don’t and will remained marks.
+					<br><br>...<br>
+					" id="Sunny_Stone">
+
+					<img class="myImg" src="resources/color_GraniteBlack.jpg" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to apply once a year sealer to protect the stones
+					<br><br><label style=' color:orange;'>2</label>.
+						The wet look sealer will make the stones change the color to be more gray
+					<br><br><label style=' color:orange;'>3</label>.
+						This stones have “Flamed” treatment as a non-slip treatment.
+					<br><br>...<br>
+					" id="Granite-Black_Stone">
+
+					<img class="myImg" src="resources/color_Travertine.png" alt=
+					"<label style=' color:orange;font-size:20px;'>
+						Tips
+					</label><br><br>
+					<label style=' color:orange;'>1</label>.
+						We recommend to seal the holes with marble glue to protect from damages made by the swimming pools chemicals that stay in the holes and can’t rinse.   
+					<br><br><label style=' color:orange;'>2</label>.
+						We apply not recommend this stones in frizzing area 
+					<br><br><label style=' color:orange;'>3</label>.
+						We recommend to apply once a year sealer to protect to stones  
+					<br><br><label style=' color:orange;'>4</label>.
+						The wet look sealer will make the stones change the color to be more dark beige/yellow  
+					<br><br><label style=' color:orange;'>5</label>.
+						This stones have “brushed” treatment as a non-slip treatment.
+					<br><br>...<br>
+					" id="Travertine_Stone">
+
+					<br><br>
+					<h3 style="text-align: center;">several stones needs 90 days for supply, so please ask for approve order</h3>
+					<div class="optionsStone">
+						<input type="radio" name="stone[]" class="form-radio" value="California" id="CA" /><label for="CA">CA</label>
+						<input type="radio" name="stone[]" class="form-radio" value="East-Gray" id="EG" /><label for="EG">EG</label>
+						<input type="radio" name="stone[]" class="form-radio" value="Granite-Gray" id="GG" /><label for="GG">GG</label>
+						<input type="radio" name="stone[]" class="form-radio" value="Kavala" id="KV" /><label for="KV">KV</label>
+						<input type="radio" name="stone[]" class="form-radio" value="Sunny" id="SU" /><label for="SU">SU</label>
+						<input type="radio" name="stone[]" class="form-radio" value="Granite-Black" id="GB" /><label for="GB">GB</label>
+						<input type="radio" name="stone[]" class="form-radio" value="Travertine" id="TR" /><label for="TR">TR</label>	
+					</div>
+					
+					<button class="btn" id="btn_sec3_back">GO BACK</button>
+					<button class="btn" id="btn_sec3_proc">NEXT</button>	
+			</section>
+			<section id="beachLines_Not_Section">
+				<h3 style="text-align: center;margin-top: 10%;margin-bottom: 10%;">No Available Beach Line For Selected <span style="color: #024766;" id="not_available2"></span></h3>
+				<button class="btn" id="btn_sec45_back">GO BACK</button>
+				<button class="btn" id="btn_sec45_proc">NEXT</button>	
+			</section>
+			<section id="beachLines_Section">
+				<hr id="brL" style="margin-left:13%;"><h3 style="display: inline;">&emsp;Beach Line&emsp;</h3><hr id="brR">
+				<br><br>
+					<img onclick="beachImgClick('#plastic')" class="myImg" src="resources/Plastic Skimmer.jpg" alt="Plastic Skimmer" id="beach1">
+					<img onclick="beachImgClick('#ta')" class="myImg" src="resources/T&A Skimmer.jpg" alt="T&A Skimmer" id="beach2">
+					<img onclick="beachImgClick('custom')" class="myImg" src="resources/Ask Compass For a Quote.jpg" alt="Ask for a Quote From Compass" id="beach3">
+					<img onclick="beachImgClick('#rollo')" class="myImg" src="resources/No RolloCover.jpg" alt="No Rollo Cover" id="beach4">
+					<br><br>
+					<div class="optionsbeachLines">
+						
+						<input type="radio" name="beach[]" class="form-radio" value="Plastic Skimmer" id="plastic" /><label for="plastic">Plastic</label>
+						<input type="radio" name="beach[]" class="form-radio" value="T&A Skimmer" id="ta" /><label for="ta">T&A</label>
+						<input type="radio" name="beach[]" class="form-radio" value="No RolloCover" id="rollo" /><label for="rollo">No Rollo Cover</label>
+						<input type="radio" name="beach[]" class="form-radio" value="Ask Compass For a Quote" id="custom" /><label for="custom">Custom</label>
+						<input type="radio" name="beach[]" checked="checked" class="form-radio" value="No Beach Line" id="no_beach" /><label for="no_beach">No Beach Line</label>
+					</div>
+					<p style="margin-left: 11%;"><b style="color:orange;">NOTE:</b> Install the beams according to the above drawings! (Not As In T&A Drawings)</p><br>
+					<p style="margin-left: 11%;" id="beachlineprice"></p>
+					<button class="btn" id="btn_sec4_back">GO BACK</button>
+					<button class="btn" id="btn_sec4_proc">NEXT</button>	
+			</section>
+			<section id="extraDetails_Section">
+				<div class="move">
+					<h3>Sealer</h3>		
+					<input type="radio" name="sealer[]" class="form-radio" value="Wet Look" id="wet" /><label for="wet">Wet Look</label>
+					<input type="radio" name="sealer[]" class="form-radio" value="Natural Look" id="natural" /><label for="natural">Natural Look</label>
+					<h3>Corners</h3>		
+					<input type="radio" name="corner[]" class="form-radio" value="Solid" id="solid" /><label for="solid">Solid</label>
+					<input type="radio" name="corner[]" class="form-radio" value="45 Degree" id="45D" /><label for="45D">45 degree</label>	
+				</div>
+				<button class="btn" id="btn_sec5_back">GO BACK</button>
+				<button class="btn" id="btn_sec5_proc">NEXT</button>	
+			</section>
+
+			<section id="checkout_Section">
+				<span style="text-align:center;"></span>
+				<p id="lop"></p>
+				<div class="lop1">
+					
+				</div>
+				<!-- <a href="mailto:me@me.com">email me here!</a> -->
+				<span style="text-align: center;" id="lop2"></span>
+				<div id="shop">
+					<h3 style="text-align: center;">Shopping Cart</h3>
+				<table id="table_two"  style="color: #000;background-color: whitesmoke;padding:5%;">
+					<tr>
+						<td>Kit Size: </td>
+						<td><span id="poolsize_1"></span></td>
+					</tr>
+					<tr>
+						<td>Pool Modal: </td>
+						<td><span id="poolmodel_1"></span></td>
+					</tr>
+					<tr>
+						<td>Profile: </td>
+						<td><span id="coping_1"></span></td>
+					</tr>
+					<tr>
+						<td>Stone Color: </td>
+						<td><span id="stone_1"></span></td>
+					</tr>
+					<tr>
+						<td>Beach Line Kit</td>
+						<td><span id="beachline_1"></span></td>
+					</tr>
+					<tr>
+						<td>Sealer: </td>
+						<td><span id="sealer_1"></span></td>
+					</tr>
+					<tr>
+						<td>Corners: </td>
+						<td><span id="corner_1"></span></td>
+					</tr>
+				</table>
+				<div class="discount_text">
+					<p>Discount: <span id="discount_opt"></span></p>
+					<div id="discount_show">
+						<p>Coping kit: <span id="discount_coping"></span> + Beach Line Kit: <span id="discount_beach"></span> (Same Pool) <span id="discount_percent"></span>% Discount on Beach line Kit</p>
+						<p id="solid_corner">Solid Corners Price: €<span id="corner_price"></span></p>
+						<p>Orignial Price: <span id="discount_original"></span> Discounted Price: <span id="discount_discount"></span></p>
+					</div>	
+				</div>
+				
+				<h3 style="text-align:center;">Total Amount Due:</h3>
+				<!-- <label id="dis1Label" style="display: block;text-align: center">Before Discount & Beach line Kit Price Addition: </label> --><p id="total_amount" style="color:#77C667;"></p>
+<!-- 				<label id="dis2Label" style="display: block;text-align: center">After Discount: </label><p style="font-weight: bolder;font-size: 32px;color:#77C667;text-align: center" id="total_amount2" ></p>	 -->
+				</div><br>
+				<div style="text-align: center;" class="tip">
+					<h3>Tip For <span style="color: #024766;" id="stone_name"></span></h3>
+					<p id="stone_tip"></p>
+					
+				</div>
+				<span style="text-align: center" id="lop2"></span>
+				<div id="one123" style="color: whitesmoke;background-color: gray;padding:5%;">	
+					<p>All prices not including: VAT,TAX, Transportations costs</p>
+					<p>All stones are for wet environment and have nonslip treatment</p>
+					<p>All stones are natural stones so the samples that you sow are not the exact stone that you are going to get</p>
+					<p>All set are including Compass logo in the corner, 50 Plastic cross for the gap between the stones, installation manual, sealer and crating.</p>  
+					<p>All set have 45° corners. 4 corners right cut 4 corners left cut</p>
+					<p>Limited warranty for 3 years</p>
+					<p>Prices are EXW or EX-factory and include set crating</p>
+					<p>Payment terms 100% ordering</p>
+					<p>We can apply for any stones lip (B6) profile by gluing the lip, Granite Black, Kavala, Sunny can be solid.</p>
+					<p>Recommend your customers to seal the stones once a year.</p>
+					<p>Sunny  and Travertine stones is not recommended to frizzing water environment</p>
+					<p>We recommend to seal the travertine holes with marble glue for protecting the stones from frizzing cracks and chemical damages if swimming pools water stay in the holes , for doing this treatment you will need to add 200€ </p>
+					<br><br>
+					<p>•	by ordering I declaring to understand all recommendations, tips and nots.</p> 
+					<p>•	For more information please contact you compass sale manger.</p>  
+
+				</div>
+				
+
+
+				<br><br>
+				<button class="btn" id="btn_sec6_back" style="margin-left:35%;">GO BACK</button>
+				<button class="btn" id="btn_sec6_proc" type="submit"  style="margin-left:5%;">NEXT</button>	
+			
+			</section>
+
+			<section id="final">
+				<button class="btn" id="print_btn" style="margin-left:45%;">PRINT</button>
+			</section>
+
+			<div id="myModal" class="modal">
+				<span class="close" onclick="document.getElementById('myModal').style.display='none';">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+				<button class="btnq2" id="close_modal_btn">OK</button>
+			</div>
+	</form>
+	</div>
+	
+	<script src="MainScript.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/13.0.2/js/intlTelInput.js"></script>
+
+<section class="userDetails" style="background-color: whitesmoke;">
+	<h3 style="text-align: center;">Customer Details</h3>
+	<div style="padding: 2%;float:left;">
+		<label>Dealer Order: </label>
+			<span id="DOname"></span><br>
+		<label>Contact Name: </label>
+			<span id="Cname"></span><br>
+		<label>Phone Number: </label>
+			<span id="Pname"><span ><br>
+		<label>Email Address: </label>
+			<span id="Ename"></span><br>
+	</div>
+
+	<div style="padding: 2%;float:right;">
+		<label>Street: </label>
+			<span id="Streetname"></span><br>
+		<label>City: </label>
+			<span id="Cityname"></span><br>
+		<label>State </label>
+			<Span id="Statename"></span><br>
+		<label>Zip:</label>	
+			<span id="Zipname"></span><br>
+	</div>		
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
